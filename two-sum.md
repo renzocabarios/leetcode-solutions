@@ -1,6 +1,6 @@
 ## TWO SUM
 
-## REFERNCE
+## REFERENCE
 
 - https://leetcode.com/problems/two-sum/
 
