@@ -25,3 +25,4 @@ function twoSum(nums: number[], target: number): number[] {
 ## TIMESTAMP
 
 - 5/17/2023 STARTED
+- 5/18/2023 00:06:19
