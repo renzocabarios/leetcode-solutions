@@ -1,0 +1,20 @@
+## apply-transform-over-each-element-in-array
+
+## REFERENCE
+
+- https://leetcode.com/problems/apply-transform-over-each-element-in-array/
+
+## SOLUTION
+
+``` Typescript
+function map(arr: number[], fn: (n: number, i: number) => number): number[] {
+    let temp = []
+    arr.forEach((e: number, index: number) =>  temp.push(fn(e, index)));
+    return temp;
+};
+
+```
+
+## TIMESTAMP
+
+- 5/19/2023 00:07:27
