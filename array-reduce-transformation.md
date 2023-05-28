@@ -23,3 +23,4 @@ function reduce(nums: number[], fn: Fn, init: number): number {
 
 - 5/24/2023 00:08:30
 - 5/25/2023 00:01:27
+- 5/28/2023 00:01:32
