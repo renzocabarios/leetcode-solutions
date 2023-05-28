@@ -9,14 +9,10 @@
 ``` typescript
 function numJewelsInStones(jewels: string, stones: string): number {
     let temp = 0;
-    const tempJewel = jewels.split("");
-    stones.split("").forEach((stone: string) => {
-        if(tempJewel.includes(stone)){
-            temp++;
-        }
+    stones.split("").forEach((e: string) => {
+        if(jewels.split("").includes(e)) temp++
     })
-
-    return temp
+    return temp;
 };
 ```
 
@@ -24,4 +20,4 @@ function numJewelsInStones(jewels: string, stones: string): number {
 ## TIMESTAMP
 
 - 5/26/2023 00:17:14
-
+- 5/28/2023 00:02:58
