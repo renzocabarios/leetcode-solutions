@@ -8,18 +8,10 @@
 
 ``` typescript
 function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {
-    let result = [];
-
-    const max: number = candies.reduce((acc, curr) => {
-        return curr > acc ? curr : acc;
-    }, 0);
-    
-
-    for(let i = 0; i < candies.length; i++) {
-        result.push(candies[i] + extraCandies >= max) 
-    }
-    
-    return result
+    const max: number = candies.reduce((acc, curr) => curr > acc ? curr : acc  , 0)
+    return candies.map((e: number) => {
+        return (e + extraCandies) >= max
+    })
 };
 ```
 
@@ -27,3 +19,4 @@ function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {
 ## TIMESTAMP
 
 - 6/03/2023 00:25:00
+- 6/04/2023 00:07:21
