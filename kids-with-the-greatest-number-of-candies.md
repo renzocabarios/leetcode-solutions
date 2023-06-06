@@ -8,10 +8,8 @@
 
 ``` typescript
 function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {
-    const max: number = candies.reduce((acc, curr) => curr > acc ? curr : acc  , 0)
-    return candies.map((e: number) => {
-        return (e + extraCandies) >= max
-    })
+    const max = Math.max(...candies);
+    return candies.map((e: number) => (e + extraCandies >= max) )
 };
 ```
 
@@ -20,3 +18,4 @@ function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {
 
 - 6/03/2023 00:25:00
 - 6/04/2023 00:07:21
+- 6/07/2023 00:02:39
