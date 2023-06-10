@@ -8,10 +8,9 @@
 
 ``` Typescript
 async function addTwoPromises(promise1: Promise<number>, promise2: Promise<number>): Promise<number> {
-    return new Promise(async function(resolve, reject) {
-        resolve(await promise1 + await promise2);
-    });
-    
+    return Promise.all([promise1,promise2]).then((_) => {
+        return _.reduce((acc, curr) => acc+curr, 0)
+    })
 };
 
 /**
@@ -23,3 +22,4 @@ async function addTwoPromises(promise1: Promise<number>, promise2: Promise<numbe
 ## TIMESTAMP
 
 - 6/08/2023 00:03:12
+- 6/10023 00:01:40
