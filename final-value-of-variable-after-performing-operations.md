@@ -8,12 +8,11 @@
 
 ``` typescript
 function finalValueAfterOperations(operations: string[]): number {
-    let init = 0;
-    operations.forEach((e: string) => {
-        if(e.includes("-")) init--;
-        if(e.includes("+")) init++;
-    })
-    return init;
+    return operations.reduce((acc, curr) => {
+        if(curr.includes("--")) return acc - 1;
+        if(curr.includes("++")) return acc + 1;
+        return acc;
+    }, 0)
 };
 ```
 
@@ -23,3 +22,4 @@ function finalValueAfterOperations(operations: string[]): number {
 - 5/26/2023 00:02:52
 - 5/27/2023 00:02:10
 - 6/01/2023 00:01:54
+- 6/13/2023 00:03:30
