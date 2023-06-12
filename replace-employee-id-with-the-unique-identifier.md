@@ -20,3 +20,4 @@ SELECT unique_id, name FROM Employees LEFT JOIN EmployeeUNI ON Employees.id = Em
 - 5/31/2023 00:01:26
 - 6/01/2023 00:01:47
 - 6/03/2023 00:02:15
+- 6/12/2023 00:01:59
