@@ -30,3 +30,4 @@ function leftRightDifference(nums: number[]): number[] {
 - 6/08/2023 00:03:12
 - 6/10/2023 00:08:20
 - 6/11/2023 00:01:57
+- 6/12/2023 00:01:49
