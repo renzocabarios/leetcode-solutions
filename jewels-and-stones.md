@@ -8,7 +8,7 @@
 
 ``` typescript
 function numJewelsInStones(jewels: string, stones: string): number {
-    return stones.split("").reduce((acc, curr) => jewels.includes(curr) ? acc + 1: acc, 0);
+    return [...stones].filter((e: string) => [...jewels].includes(e)).length;
 };
 ```
 
@@ -19,3 +19,4 @@ function numJewelsInStones(jewels: string, stones: string): number {
 - 5/28/2023 00:02:58
 - 6/01/2023 00:02:52
 - 6/08/2023 00:03:36
+- 7/25/2023 00:03:32
