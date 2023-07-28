@@ -19,3 +19,4 @@ SELECT event_day as day, emp_id, SUM(out_time - in_time) as total_time FROM Empl
 - 5/26/2023 00:01:39
 - 6/01/2023 00:03:10
 - 6/10/2023 00:04:01
+- 7/23/2023 00:01:19
