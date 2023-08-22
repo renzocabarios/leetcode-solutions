@@ -18,3 +18,4 @@ SELECT product_id FROM Products WHERE low_fats='Y' AND recyclable='Y';
 - 5/22/2023 00:00:58
 - 5/28/2023 00:00:44
 - 6/11/2023 00:00:34
+- 8/22/2023 00:01:41
