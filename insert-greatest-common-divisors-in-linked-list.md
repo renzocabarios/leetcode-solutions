@@ -20,24 +20,19 @@
  */
 
 function gcd(a: number, b: number): number {
-    return !b ? a : gcd(b, a % b);
-}
+    return !b ? a : gcd(b, a % b)
+};
 
 function insertGreatestCommonDivisors(head: ListNode | null): ListNode | null {
-    if(head == null) return head;
 
-    let current = head;
+    if(!head) return head;
+    let current: ListNode = head;
 
-    while(current){
-        let last = current;
+    while(current.next !== null){
+        let back = current;
         current = current.next;
-
-        if(current !== null){
-            let value = gcd(last.val, current.val);
-            const newNode: ListNode = new ListNode(value);
-            last.next = newNode;
-            newNode.next = current;
-        }
+        const value: number = gcd(back.val, current.val);
+        back.next = new ListNode(value, current)
     }
 
     return head;
