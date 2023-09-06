@@ -22,3 +22,4 @@ function numberOfEmployeesWhoMetTarget(hours: number[], target: number): number 
 
 - 9/2/2023 00:00:00
 - 9/3/2023 00:01:20
+- 9/6/2023 00:02:06
