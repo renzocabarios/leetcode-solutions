@@ -22,4 +22,4 @@ function mostWordsFound(sentences: string[]): number {
 ## TIMESTAMP
 
 - 09/06/2023 00:03:09
-
+- 09/07/2023 00:01:54
