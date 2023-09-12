@@ -8,13 +8,7 @@
 
 ``` Typescript
 function numberOfEmployeesWhoMetTarget(hours: number[], target: number): number {
-    let employees = 0;
-
-    hours.forEach((e: any) => {
-        if(e >= target) employees++;
-    })
-
-    return employees
+    return hours.reduce((acc, curr) => curr >= target ? acc + 1 : acc, 0)
 };
 ```
 
@@ -23,3 +17,4 @@ function numberOfEmployeesWhoMetTarget(hours: number[], target: number): number 
 - 9/2/2023 00:00:00
 - 9/3/2023 00:01:20
 - 9/6/2023 00:02:06
+- 09/12/2023 00:03:10
