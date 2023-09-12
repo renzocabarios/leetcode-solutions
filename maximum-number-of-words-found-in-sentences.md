@@ -10,9 +10,8 @@
 function mostWordsFound(sentences: string[]): number {
     let max: number = 0;
 
-    sentences.forEach((e:string) => {
-        const length = e.split(" ").length
-        if(max < length) max = length
+    sentences.forEach((sentence: string) => {
+        max = Math.max(max, sentence.split(" ").length)
     })
 
     return max;
@@ -23,3 +22,4 @@ function mostWordsFound(sentences: string[]): number {
 
 - 09/06/2023 00:03:09
 - 09/07/2023 00:01:54
+- 09/12/2023 00:01:36
