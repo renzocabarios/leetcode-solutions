@@ -34,3 +34,12 @@ function countPoints(points: number[][], queries: number[][]): number[] {
 
 - 09/12/2023 00:33:37
 - 09/13/2023 00:06:57
+- 09/18/2023 00:08:57
+
+
+
+
+
+
+
+
