@@ -21,3 +21,19 @@ function minimumSum(num: number): number {
 ## TIMESTAMP
 
 - 09/15/2023 00:07:35
+- 09/21/2023 00:07:23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
