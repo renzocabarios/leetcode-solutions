@@ -8,7 +8,7 @@
 
 ``` javascript
 function theMaximumAchievableX(num: number, t: number): number {
-    return num + (2 * t);
+    return num + t * 2;
 };
 ```
 
@@ -21,3 +21,4 @@ function theMaximumAchievableX(num: number, t: number): number {
 - 9/6/2023 00:05:27
 - 09/07/2023 00:00:45
 - 09/12/2023 00:02:26
+- 09/22/2023 00:01:25
