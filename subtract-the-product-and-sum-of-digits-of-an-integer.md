@@ -26,4 +26,4 @@ function subtractProductAndSum(n: number): number {
 
 - 09/07/2023 00:05:41
 - 09/12/2023 00:02:41
-
+- 09/22/2023 00:02:04
