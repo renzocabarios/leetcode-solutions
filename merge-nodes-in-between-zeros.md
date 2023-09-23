@@ -20,20 +20,20 @@
  */
 
 function mergeNodes(head: ListNode | null): ListNode | null {
-    const dummy = new ListNode();
-    let cur = dummy;
+    const main: ListNode = new ListNode();
+    let temp: ListNode = main;
     let sum: number = 0;
+
     while(head){
-        if (head.val === 0 && sum !== 0) {
-            cur.next = new ListNode(sum);
-            cur = cur.next;
+        if(head.val === 0 && sum !== 0){
+            temp.next = new ListNode(sum);
+            temp = temp.next;
             sum = 0;
         }
         sum += head.val;
         head = head.next;
     }
-
-    return dummy.next ;
+    return main.next;
 };
 ```
 
@@ -41,3 +41,14 @@ function mergeNodes(head: ListNode | null): ListNode | null {
 
 - 09/14/2023 00:07:56
 - 09/22/2023 00:12:57
+- 09/23/2023 00:10:12
+
+
+
+
+
+
+
+
+
+
