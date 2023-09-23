@@ -19,4 +19,4 @@ function createTargetArray(nums: number[], index: number[]): number[] {
 ## TIMESTAMP
 
 - 09/22/2023 00:07:42
-
+- 09/23/2023 00:14:42
