@@ -6,24 +6,27 @@
 
 ## SOLUTION
 
-``` javascript
+``` typescript
 function lengthOfLongestSubstring(s: string): number {
-    if (!s) return 0;
-    let start = 0;
-    let end = 0;
-    let maxLength = 0;
-    const uniqueCharacters = new Set();
-    while (end < s.length) {
-        if (!uniqueCharacters.has(s[end])) {
-            uniqueCharacters.add(s[end]);
+    if(!s) return 0;
+    
+    let start: number = 0;
+    let end: number = 0;
+    let max: number = 0;
+    const unique = new Set();
+
+    while(end < s.length){
+        if(!unique.has(s[end])){
+            unique.add(s[end]);
             end++;
-            maxLength = Math.max(maxLength, uniqueCharacters.size);
-        } else {
-            uniqueCharacters.delete(s[start]);
+            max = Math.max(max, unique.size);
+        }else{
+            unique.delete(s[start]);
             start++;
         }
     }
-    return maxLength;
+
+    return max;
 };
 ```
 
@@ -38,7 +41,7 @@ function lengthOfLongestSubstring(s: string): number {
 - 8/28/2023 00:04:30
 - 9/4/2023 00:04:06
 - 09/14/2023 00:03:13
-
+- 10/02/2023 00:04:54
 
 
 
