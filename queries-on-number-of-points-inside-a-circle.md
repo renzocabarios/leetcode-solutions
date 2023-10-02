@@ -9,22 +9,19 @@
 
 ``` Typescript
 function countPoints(points: number[][], queries: number[][]): number[] {
-    const answer: number[] = [];
-
-    for(let i: number = 0; queries.length > i; i++){
+    const counts: number[] = []
+    for(let i: number = 0; i < queries.length; i++){
         let count: number = 0;
-        for(let j: number = 0; points.length > j; j++){
-            const x2 = Math.pow(queries[i][0] - points[j][0], 2);
-            const y2 = Math.pow(queries[i][1] - points[j][1], 2);
-            const r2 = Math.pow(queries[i][2], 2);
-            if(x2 + y2 <= r2){
-                count++;
-            }
+        for(let j: number = 0; j < points.length; j++){
+            const x2: number = Math.abs(Math.pow(queries[i][0] - points[j][0], 2));
+            const y2: number = Math.abs(Math.pow(queries[i][1] - points[j][1], 2));
+            const r2: number = Math.abs(Math.pow(queries[i][2], 2));
+            if(x2 + y2 <= r2)  count++;
         }
-
-        answer.push(count)
+        counts.push(count)
     }
-    return answer;
+
+    return counts;
 };
 
 
@@ -38,7 +35,7 @@ function countPoints(points: number[][], queries: number[][]): number[] {
 - 09/21/2023 00:03:22
 - 09/22/2023 00:03:23
 - 09/25/2023 00:03:51
-
+- 10/02/2023 00:03:48
 
 
 
