@@ -28,7 +28,7 @@ function smallerNumbersThanCurrent(nums: number[]): number[] {
 - 09/13/2023 00:03:29
 - 09/14/2023 00:03:01
 - 09/22/2023 00:02:28
-
+- 10/05/2023 00:05:50
 
 
 
